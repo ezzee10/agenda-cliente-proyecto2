@@ -1,0 +1,268 @@
+body{
+    background-color: #F0F2F5;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    margin: 0rem;
+}
+
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1800px;
+    }
+}
+
+@media (max-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding: 0;
+    }
+}
+
+
+/**HEADER**/
+
+.header{
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    
+}
+
+
+@media (max-width: 1400px){
+    .header {
+        padding: 0 1rem;
+    }
+}
+
+.header h1{
+    display: inline-block;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo {
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.titulo{
+    font-weight: 700;
+}
+
+/**FORMULARIO**/
+
+.formulario{
+   
+    border: 1px solid #e1e1e1;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+@media (min-width: 1200px) { 
+    .formulario{
+        width: 800px;
+    }
+}
+
+.form-control{
+    margin-bottom: 1.5rem;
+    -webkit-appearance: button;
+}
+
+.alert{
+    margin-top: 1rem;
+}
+
+.fa-arrow-left{
+    margin-right: 0.5rem;
+}
+
+.back{
+    color: #000000;
+    margin-right: 1rem;
+}
+
+.back span{
+    font-size: 0.8rem;
+}
+
+.back:hover{
+    color: #000000;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+
+/**TABLA**/
+
+.table{
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) { 
+
+    .table{
+        width: 100%;
+    }
+
+    .table thead{
+        display: none;
+    }
+    .table .manager{
+        display: none;
+    }
+
+    .table .status{
+        display: none;
+    }
+
+    .table .asociado{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) { 
+    .asociado-responsive{
+        font-size: 0.9rem;
+        display: none;
+    }
+}
+
+
+td .action{
+    text-align: center;
+}
+
+tbody{
+    background-color: white;
+}
+
+thead{
+    background-color: #FAFAFA;
+}
+
+.table th{
+    padding: 1.3rem 2rem;
+}
+
+.table td{
+    padding: 0.5rem 2rem;
+}
+
+.table .status p{
+    
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.creation-date{
+    color: #b8b8b8;
+}
+
+@media (max-width: 768px) { 
+    .creation-date{
+        font-size: 0.8rem;
+    }
+}
+
+.fa-trash{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.fa-edit{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.btn-dropdown{
+    width: 100%;
+    padding: 0;
+    text-align: left;
+}
+
+.no-projects{
+    padding: 2rem;
+    text-align: center;
+}
+
+.no-projects p{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.fa-ellipsis-v{
+    font-size: 1.5rem;
+}
+
+.avatar{
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    margin-right: 0.5rem;
+}
+
+
+/**PAGINACION**/
+
+.pagination {
+    margin: 15px auto;
+    display: flex;
+    list-style: none;
+    outline: none;
+    text-align: center;
+  }
+  .pagination > .active > a{
+    background-color: #47ccde ;
+    border-color: #47ccde ;
+    color: #fff;
+  }
+  .pagination > li > a{
+    border: 1px solid #47ccde ;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+  }
+  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color: #47ccde ;
+    border-color: #47ccde;
+    outline: none ;
+  }
+  .pagination > li > a, .pagination > li > span{
+    color: #47ccde
+  }
+  .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius: unset
+  }
+
+ 
